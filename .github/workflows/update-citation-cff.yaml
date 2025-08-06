@@ -15,7 +15,7 @@ on:
 
 name: Update CITATION.cff
 permissions:
-  workflows: write
+  contents: write
   pull-requests: write
 
 jobs:
