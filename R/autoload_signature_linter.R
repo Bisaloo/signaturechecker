@@ -1,0 +1,16 @@
+#' Check signature of [autoload()]
+#'
+#' @export
+autoload_signature_linter <- lintr::make_linter_from_function_xpath(
+  'autoload',
+  glue::glue(
+    'parent::expr[
+      expr[1][not(OP-DOLLAR)]
+      and (
+        SYMBOL_SUB[not({lintr:::xp_text_in_table(c("name", "package", "reset"))})]
+        or count(SYMBOL_SUB) > 3
+      )
+    ]'
+  ),
+  lint_message = '[signature] invalid signature for autoload'
+)

@@ -1,8 +1,8 @@
-#' Check signature of [nrow()]
+#' Check signature of [as.list.Date()]
 #'
 #' @export
-nrow_signature_linter <- lintr::make_linter_from_function_xpath(
-  'nrow',
+as_list_Date_signature_linter <- lintr::make_linter_from_function_xpath(
+  'as.list.Date',
   glue::glue(
     'parent::expr[
       expr[1][not(OP-DOLLAR)]
@@ -12,5 +12,5 @@ nrow_signature_linter <- lintr::make_linter_from_function_xpath(
       )
     ]'
   ),
-  lint_message = '[signature] invalid signature for nrow'
+  lint_message = '[signature] invalid signature for as.list.Date'
 )

@@ -2,7 +2,7 @@
 #'
 #' @export
 ncol_signature_linter <- lintr::make_linter_from_function_xpath(
-  c('ncol', 'NCOL'),
+  'ncol',
   glue::glue(
     'parent::expr[
       expr[1][not(OP-DOLLAR)]
