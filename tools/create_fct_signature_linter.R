@@ -89,7 +89,7 @@ get_recursive_formals <- function(fct) {
     )
 
   internal_calls <- xml2::xml_find_first(
-    next_fct_calls,
+    parsed_body,
     "//SYMBOL_FUNCTION_CALL[text() = '.Internal']"
   )
 
