@@ -2,7 +2,10 @@
 Sys_setlocale_signature_linter <- lintr::make_linter_from_function_xpath(
   'Sys.setlocale',
   glue::glue(
-    'following-sibling::SYMBOL_SUB[not({lintr:::xp_text_in_table(c("category", "locale"))})]'
+    'parent::expr[
+      SYMBOL_SUB[not({lintr:::xp_text_in_table(c("category", "locale"))})]
+      or count(SYMBOL_SUB) > 2
+    ]'
   ),
   lint_message = '[signature] invalid signature for Sys.setlocale'
 )

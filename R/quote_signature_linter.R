@@ -2,7 +2,10 @@
 quote_signature_linter <- lintr::make_linter_from_function_xpath(
   'quote',
   glue::glue(
-    'following-sibling::SYMBOL_SUB[not({lintr:::xp_text_in_table("expr")})]'
+    'parent::expr[
+      SYMBOL_SUB[not({lintr:::xp_text_in_table("expr")})]
+      or count(SYMBOL_SUB) > 1
+    ]'
   ),
   lint_message = '[signature] invalid signature for quote'
 )

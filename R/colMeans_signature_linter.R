@@ -2,7 +2,10 @@
 colMeans_signature_linter <- lintr::make_linter_from_function_xpath(
   'colMeans',
   glue::glue(
-    'following-sibling::SYMBOL_SUB[not({lintr:::xp_text_in_table(c("x", "na.rm", "dims"))})]'
+    'parent::expr[
+      SYMBOL_SUB[not({lintr:::xp_text_in_table(c("x", "na.rm", "dims"))})]
+      or count(SYMBOL_SUB) > 3
+    ]'
   ),
   lint_message = '[signature] invalid signature for colMeans'
 )

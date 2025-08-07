@@ -2,7 +2,10 @@
 {{gsub('.', '_', fct_name, fixed = TRUE)}}_signature_linter <- lintr::make_linter_from_function_xpath(
   '{{fct_name}}',
   glue::glue(
-    'following-sibling::SYMBOL_SUB[not({lintr:::xp_text_in_table({{deparse1(formals)}})})]'
+    'parent::expr[
+      SYMBOL_SUB[not({lintr:::xp_text_in_table({{deparse1(formals)}})})]
+      or count(SYMBOL_SUB) > {{length(formals)}}
+    ]'
   ),
   lint_message = '[signature] invalid signature for {{fct_name}}'
 )

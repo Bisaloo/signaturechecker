@@ -2,7 +2,10 @@
 getSrcLines_signature_linter <- lintr::make_linter_from_function_xpath(
   'getSrcLines',
   glue::glue(
-    'following-sibling::SYMBOL_SUB[not({lintr:::xp_text_in_table(c("srcfile", "first", "last"))})]'
+    'parent::expr[
+      SYMBOL_SUB[not({lintr:::xp_text_in_table(c("srcfile", "first", "last"))})]
+      or count(SYMBOL_SUB) > 3
+    ]'
   ),
   lint_message = '[signature] invalid signature for getSrcLines'
 )

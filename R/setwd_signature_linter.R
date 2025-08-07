@@ -2,7 +2,10 @@
 setwd_signature_linter <- lintr::make_linter_from_function_xpath(
   'setwd',
   glue::glue(
-    'following-sibling::SYMBOL_SUB[not({lintr:::xp_text_in_table("dir")})]'
+    'parent::expr[
+      SYMBOL_SUB[not({lintr:::xp_text_in_table("dir")})]
+      or count(SYMBOL_SUB) > 1
+    ]'
   ),
   lint_message = '[signature] invalid signature for setwd'
 )

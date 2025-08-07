@@ -2,7 +2,10 @@
 casefold_signature_linter <- lintr::make_linter_from_function_xpath(
   'casefold',
   glue::glue(
-    'following-sibling::SYMBOL_SUB[not({lintr:::xp_text_in_table(c("x", "upper"))})]'
+    'parent::expr[
+      SYMBOL_SUB[not({lintr:::xp_text_in_table(c("x", "upper"))})]
+      or count(SYMBOL_SUB) > 2
+    ]'
   ),
   lint_message = '[signature] invalid signature for casefold'
 )
