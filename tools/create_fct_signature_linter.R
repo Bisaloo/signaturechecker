@@ -41,7 +41,16 @@ create_fct_signature_linter <- function(
 
 get_recursive_formals <- function(fct) {
   # As per ?formals, the `args()` intermediate step is required for primitives
-  formals_env[["formals"]] <<- c(formals_env[["formals"]], methods::formalArgs(args(fct)))
+  this_fct_formals <- methods::formalArgs(args(fct))
+  formals_env[["formals"]] <<- c(formals_env[["formals"]], this_fct_formals)
+
+  has_ellipses <- "..." %in% this_fct_formals
+
+  if (!has_ellipses) {
+    return(TRUE)
+  }
+
+  # FIXME: why is this necessary?
   formals_env[["depth"]] <<- formals_env[["depth"]] + 1
   if (formals_env[["depth"]] > 20) {
     return(FALSE)
@@ -94,8 +103,6 @@ get_recursive_formals <- function(fct) {
   )
 
   if (any(!is.na(internal_calls))) {
-    # This might be overkill. If the function calling Internal() doesn't have
-    # ..., we may still be able to extract args
     formals_env[["formals"]] <- NULL
     return(FALSE)
   }
