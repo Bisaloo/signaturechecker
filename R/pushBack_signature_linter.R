@@ -1,0 +1,8 @@
+#' @export
+pushBack_signature_linter <- lintr::make_linter_from_function_xpath(
+  'pushBack',
+  glue::glue(
+    'following-sibling::SYMBOL_SUB[not({lintr:::xp_text_in_table(c("data", "connection", "newLine", "encoding"))})]'
+  ),
+  lint_message = '[signature] invalid signature for pushBack'
+)
