@@ -7,8 +7,8 @@
     'parent::expr[
       expr[1][not(OP-DOLLAR)]
       and (
-        SYMBOL_SUB[not({lintr:::xp_text_in_table({{deparse1(formals)}})})]
-        or count(SYMBOL_SUB) > {{length(formals)}}
+        SYMBOL_SUB[not({lintr:::xp_text_in_table({{deparse1(frmls)}})})]
+        or count(SYMBOL_SUB) > {{length(frmls)}}
       )
     ]'
   ),
