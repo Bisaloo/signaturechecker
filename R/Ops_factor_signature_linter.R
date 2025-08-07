@@ -1,3 +1,5 @@
+#' Check signature of [Ops.factor()]
+#'
 #' @export
 Ops_factor_signature_linter <- lintr::make_linter_from_function_xpath(
   'Ops.factor',

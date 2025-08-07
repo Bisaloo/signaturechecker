@@ -1,3 +1,5 @@
+#' Check signature of [rep_len()]
+#'
 #' @export
 rep_len_signature_linter <- lintr::make_linter_from_function_xpath(
   'rep_len',

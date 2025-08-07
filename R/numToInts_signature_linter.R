@@ -1,3 +1,5 @@
+#' Check signature of [numToInts()]
+#'
 #' @export
 numToInts_signature_linter <- lintr::make_linter_from_function_xpath(
   'numToInts',

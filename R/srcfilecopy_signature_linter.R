@@ -1,3 +1,5 @@
+#' Check signature of [srcfilecopy()]
+#'
 #' @export
 srcfilecopy_signature_linter <- lintr::make_linter_from_function_xpath(
   'srcfilecopy',

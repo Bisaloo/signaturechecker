@@ -1,3 +1,5 @@
+#' Check signature of [is.finite()]
+#'
 #' @export
 is_finite_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.finite',

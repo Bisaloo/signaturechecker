@@ -1,3 +1,5 @@
+#' Check signature of [R.home()]
+#'
 #' @export
 R_home_signature_linter <- lintr::make_linter_from_function_xpath(
   'R.home',

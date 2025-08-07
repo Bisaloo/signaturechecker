@@ -1,3 +1,5 @@
+#' Check signature of [sys.source()]
+#'
 #' @export
 sys_source_signature_linter <- lintr::make_linter_from_function_xpath(
   'sys.source',

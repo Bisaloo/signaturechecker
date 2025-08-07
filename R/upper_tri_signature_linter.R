@@ -1,3 +1,5 @@
+#' Check signature of [upper.tri()]
+#'
 #' @export
 upper_tri_signature_linter <- lintr::make_linter_from_function_xpath(
   'upper.tri',

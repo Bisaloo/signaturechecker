@@ -1,3 +1,5 @@
+#' Check signature of [noquote()]
+#'
 #' @export
 noquote_signature_linter <- lintr::make_linter_from_function_xpath(
   'noquote',

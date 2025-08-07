@@ -1,3 +1,5 @@
+#' Check signature of [margin.table()]
+#'
 #' @export
 margin_table_signature_linter <- lintr::make_linter_from_function_xpath(
   'margin.table',

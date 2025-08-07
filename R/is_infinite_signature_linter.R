@@ -1,3 +1,5 @@
+#' Check signature of [is.infinite()]
+#'
 #' @export
 is_infinite_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.infinite',

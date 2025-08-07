@@ -1,3 +1,5 @@
+#' Check signature of [is.nan.POSIXlt()]
+#'
 #' @export
 is_nan_POSIXlt_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.nan.POSIXlt',

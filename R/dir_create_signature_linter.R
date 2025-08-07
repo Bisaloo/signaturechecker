@@ -1,3 +1,5 @@
+#' Check signature of [dir.create()]
+#'
 #' @export
 dir_create_signature_linter <- lintr::make_linter_from_function_xpath(
   'dir.create',

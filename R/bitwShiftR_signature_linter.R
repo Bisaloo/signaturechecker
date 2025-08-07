@@ -1,3 +1,5 @@
+#' Check signature of [bitwShiftR()]
+#'
 #' @export
 bitwShiftR_signature_linter <- lintr::make_linter_from_function_xpath(
   'bitwShiftR',

@@ -1,3 +1,5 @@
+#' Check signature of [months.POSIXt()]
+#'
 #' @export
 months_POSIXt_signature_linter <- lintr::make_linter_from_function_xpath(
   'months.POSIXt',

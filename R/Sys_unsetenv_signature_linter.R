@@ -1,3 +1,5 @@
+#' Check signature of [Sys.unsetenv()]
+#'
 #' @export
 Sys_unsetenv_signature_linter <- lintr::make_linter_from_function_xpath(
   'Sys.unsetenv',

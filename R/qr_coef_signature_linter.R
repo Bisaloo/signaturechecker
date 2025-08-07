@@ -1,3 +1,5 @@
+#' Check signature of [qr.coef()]
+#'
 #' @export
 qr_coef_signature_linter <- lintr::make_linter_from_function_xpath(
   'qr.coef',

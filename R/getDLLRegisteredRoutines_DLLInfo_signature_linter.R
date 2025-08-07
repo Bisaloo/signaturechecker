@@ -1,3 +1,5 @@
+#' Check signature of [getDLLRegisteredRoutines.DLLInfo()]
+#'
 #' @export
 getDLLRegisteredRoutines_DLLInfo_signature_linter <- lintr::make_linter_from_function_xpath(
   'getDLLRegisteredRoutines.DLLInfo',

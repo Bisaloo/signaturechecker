@@ -1,3 +1,5 @@
+#' Check signature of [is.primitive()]
+#'
 #' @export
 is_primitive_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.primitive',

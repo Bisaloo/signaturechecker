@@ -1,3 +1,5 @@
+#' Check signature of [as.octmode()]
+#'
 #' @export
 as_octmode_signature_linter <- lintr::make_linter_from_function_xpath(
   'as.octmode',

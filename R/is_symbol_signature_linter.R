@@ -1,3 +1,5 @@
+#' Check signature of [is.symbol()]
+#'
 #' @export
 is_symbol_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.symbol',

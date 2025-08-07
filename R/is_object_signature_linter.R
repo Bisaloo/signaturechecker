@@ -1,3 +1,5 @@
+#' Check signature of [is.object()]
+#'
 #' @export
 is_object_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.object',

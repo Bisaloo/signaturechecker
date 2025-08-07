@@ -1,3 +1,5 @@
+#' Check signature of [flush.connection()]
+#'
 #' @export
 flush_connection_signature_linter <- lintr::make_linter_from_function_xpath(
   'flush.connection',

@@ -1,3 +1,5 @@
+#' Check signature of [is.single()]
+#'
 #' @export
 is_single_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.single',

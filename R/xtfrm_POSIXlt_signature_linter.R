@@ -1,3 +1,5 @@
+#' Check signature of [xtfrm.POSIXlt()]
+#'
 #' @export
 xtfrm_POSIXlt_signature_linter <- lintr::make_linter_from_function_xpath(
   'xtfrm.POSIXlt',

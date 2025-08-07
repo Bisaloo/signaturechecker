@@ -1,3 +1,5 @@
+#' Check signature of [is.environment()]
+#'
 #' @export
 is_environment_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.environment',

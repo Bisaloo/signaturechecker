@@ -1,3 +1,5 @@
+#' Check signature of [prop.table()]
+#'
 #' @export
 prop_table_signature_linter <- lintr::make_linter_from_function_xpath(
   'prop.table',

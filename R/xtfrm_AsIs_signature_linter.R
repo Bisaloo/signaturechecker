@@ -1,3 +1,5 @@
+#' Check signature of [xtfrm.AsIs()]
+#'
 #' @export
 xtfrm_AsIs_signature_linter <- lintr::make_linter_from_function_xpath(
   'xtfrm.AsIs',

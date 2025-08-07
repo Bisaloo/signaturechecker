@@ -1,3 +1,5 @@
+#' Check signature of [vector()]
+#'
 #' @export
 vector_signature_linter <- lintr::make_linter_from_function_xpath(
   'vector',

@@ -1,3 +1,5 @@
+#' Check signature of [on.exit()]
+#'
 #' @export
 on_exit_signature_linter <- lintr::make_linter_from_function_xpath(
   'on.exit',

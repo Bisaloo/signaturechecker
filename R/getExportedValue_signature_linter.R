@@ -1,3 +1,5 @@
+#' Check signature of [getExportedValue()]
+#'
 #' @export
 getExportedValue_signature_linter <- lintr::make_linter_from_function_xpath(
   'getExportedValue',

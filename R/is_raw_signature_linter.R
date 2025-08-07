@@ -1,3 +1,5 @@
+#' Check signature of [is.raw()]
+#'
 #' @export
 is_raw_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.raw',

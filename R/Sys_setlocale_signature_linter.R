@@ -1,3 +1,5 @@
+#' Check signature of [Sys.setlocale()]
+#'
 #' @export
 Sys_setlocale_signature_linter <- lintr::make_linter_from_function_xpath(
   'Sys.setlocale',

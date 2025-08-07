@@ -1,3 +1,5 @@
+#' Check signature of [mtfrm.POSIXct()]
+#'
 #' @export
 mtfrm_POSIXct_signature_linter <- lintr::make_linter_from_function_xpath(
   'mtfrm.POSIXct',

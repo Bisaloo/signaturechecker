@@ -1,3 +1,5 @@
+#' Check signature of [mem.maxNSize()]
+#'
 #' @export
 mem_maxNSize_signature_linter <- lintr::make_linter_from_function_xpath(
   'mem.maxNSize',

@@ -1,3 +1,5 @@
+#' Check signature of [mat.or.vec()]
+#'
 #' @export
 mat_or_vec_signature_linter <- lintr::make_linter_from_function_xpath(
   'mat.or.vec',

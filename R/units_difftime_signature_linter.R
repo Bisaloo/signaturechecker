@@ -1,3 +1,5 @@
+#' Check signature of [units.difftime()]
+#'
 #' @export
 units_difftime_signature_linter <- lintr::make_linter_from_function_xpath(
   'units.difftime',

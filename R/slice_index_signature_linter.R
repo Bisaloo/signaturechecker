@@ -1,3 +1,5 @@
+#' Check signature of [slice.index()]
+#'
 #' @export
 slice_index_signature_linter <- lintr::make_linter_from_function_xpath(
   'slice.index',

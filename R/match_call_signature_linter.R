@@ -1,3 +1,5 @@
+#' Check signature of [match.call()]
+#'
 #' @export
 match_call_signature_linter <- lintr::make_linter_from_function_xpath(
   'match.call',

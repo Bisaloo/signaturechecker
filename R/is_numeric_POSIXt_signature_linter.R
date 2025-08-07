@@ -1,3 +1,5 @@
+#' Check signature of [is.numeric.POSIXt()]
+#'
 #' @export
 is_numeric_POSIXt_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.numeric.POSIXt',

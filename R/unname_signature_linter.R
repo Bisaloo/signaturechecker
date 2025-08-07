@@ -1,3 +1,5 @@
+#' Check signature of [unname()]
+#'
 #' @export
 unname_signature_linter <- lintr::make_linter_from_function_xpath(
   'unname',

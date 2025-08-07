@@ -1,3 +1,5 @@
+#' Check signature of [seq_along()]
+#'
 #' @export
 seq_along_signature_linter <- lintr::make_linter_from_function_xpath(
   'seq_along',

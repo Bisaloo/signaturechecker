@@ -1,3 +1,5 @@
+#' Check signature of [isIncomplete()]
+#'
 #' @export
 isIncomplete_signature_linter <- lintr::make_linter_from_function_xpath(
   'isIncomplete',

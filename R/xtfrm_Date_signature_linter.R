@@ -1,3 +1,5 @@
+#' Check signature of [xtfrm.Date()]
+#'
 #' @export
 xtfrm_Date_signature_linter <- lintr::make_linter_from_function_xpath(
   'xtfrm.Date',

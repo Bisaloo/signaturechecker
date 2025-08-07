@@ -1,3 +1,5 @@
+#' Check signature of [conditionCall()]
+#'
 #' @export
 conditionCall_signature_linter <- lintr::make_linter_from_function_xpath(
   'conditionCall',

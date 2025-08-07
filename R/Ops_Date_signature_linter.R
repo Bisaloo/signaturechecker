@@ -1,3 +1,5 @@
+#' Check signature of [Ops.Date()]
+#'
 #' @export
 Ops_Date_signature_linter <- lintr::make_linter_from_function_xpath(
   'Ops.Date',

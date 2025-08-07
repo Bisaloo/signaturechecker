@@ -1,3 +1,5 @@
+#' Check signature of [Ops.POSIXt()]
+#'
 #' @export
 Ops_POSIXt_signature_linter <- lintr::make_linter_from_function_xpath(
   'Ops.POSIXt',

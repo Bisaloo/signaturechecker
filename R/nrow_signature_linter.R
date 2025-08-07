@@ -1,3 +1,5 @@
+#' Check signature of [nrow()]
+#'
 #' @export
 nrow_signature_linter <- lintr::make_linter_from_function_xpath(
   c('nrow', 'nrow'),

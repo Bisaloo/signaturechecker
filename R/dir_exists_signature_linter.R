@@ -1,3 +1,5 @@
+#' Check signature of [dir.exists()]
+#'
 #' @export
 dir_exists_signature_linter <- lintr::make_linter_from_function_xpath(
   'dir.exists',

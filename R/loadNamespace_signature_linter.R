@@ -1,3 +1,5 @@
+#' Check signature of [loadNamespace()]
+#'
 #' @export
 loadNamespace_signature_linter <- lintr::make_linter_from_function_xpath(
   'loadNamespace',

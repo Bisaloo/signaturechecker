@@ -1,3 +1,5 @@
+#' Check signature of [list.dirs()]
+#'
 #' @export
 list_dirs_signature_linter <- lintr::make_linter_from_function_xpath(
   'list.dirs',

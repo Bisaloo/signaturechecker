@@ -1,3 +1,5 @@
+#' Check signature of [eval.parent()]
+#'
 #' @export
 eval_parent_signature_linter <- lintr::make_linter_from_function_xpath(
   'eval.parent',

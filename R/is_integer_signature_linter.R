@@ -1,3 +1,5 @@
+#' Check signature of [is.integer()]
+#'
 #' @export
 is_integer_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.integer',

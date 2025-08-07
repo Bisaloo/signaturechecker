@@ -1,3 +1,5 @@
+#' Check signature of [regexpr()]
+#'
 #' @export
 regexpr_signature_linter <- lintr::make_linter_from_function_xpath(
   'regexpr',

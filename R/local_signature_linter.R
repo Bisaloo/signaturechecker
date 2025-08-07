@@ -1,3 +1,5 @@
+#' Check signature of [local()]
+#'
 #' @export
 local_signature_linter <- lintr::make_linter_from_function_xpath(
   'local',

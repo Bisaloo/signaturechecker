@@ -1,3 +1,5 @@
+#' Check signature of [months.Date()]
+#'
 #' @export
 months_Date_signature_linter <- lintr::make_linter_from_function_xpath(
   'months.Date',

@@ -1,3 +1,5 @@
+#' Check signature of [library.dynam.unload()]
+#'
 #' @export
 library_dynam_unload_signature_linter <- lintr::make_linter_from_function_xpath(
   'library.dynam.unload',

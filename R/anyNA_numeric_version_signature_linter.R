@@ -1,3 +1,5 @@
+#' Check signature of [anyNA.numeric_version()]
+#'
 #' @export
 anyNA_numeric_version_signature_linter <- lintr::make_linter_from_function_xpath(
   'anyNA.numeric_version',

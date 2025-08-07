@@ -1,3 +1,5 @@
+#' Check signature of [xpdrows.data.frame()]
+#'
 #' @export
 xpdrows_data_frame_signature_linter <- lintr::make_linter_from_function_xpath(
   'xpdrows.data.frame',

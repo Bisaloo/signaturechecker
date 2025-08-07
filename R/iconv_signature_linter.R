@@ -1,3 +1,5 @@
+#' Check signature of [iconv()]
+#'
 #' @export
 iconv_signature_linter <- lintr::make_linter_from_function_xpath(
   'iconv',

@@ -1,3 +1,5 @@
+#' Check signature of [as.factor()]
+#'
 #' @export
 as_factor_signature_linter <- lintr::make_linter_from_function_xpath(
   'as.factor',

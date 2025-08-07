@@ -1,3 +1,5 @@
+#' Check signature of [chooseOpsMethod.default()]
+#'
 #' @export
 chooseOpsMethod_default_signature_linter <- lintr::make_linter_from_function_xpath(
   'chooseOpsMethod.default',

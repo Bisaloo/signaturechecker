@@ -1,3 +1,5 @@
+#' Check signature of [is.matrix()]
+#'
 #' @export
 is_matrix_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.matrix',

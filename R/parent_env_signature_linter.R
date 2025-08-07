@@ -1,3 +1,5 @@
+#' Check signature of [parent.env()]
+#'
 #' @export
 parent_env_signature_linter <- lintr::make_linter_from_function_xpath(
   'parent.env',

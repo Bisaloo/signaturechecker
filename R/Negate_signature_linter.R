@@ -1,3 +1,5 @@
+#' Check signature of [Negate()]
+#'
 #' @export
 Negate_signature_linter <- lintr::make_linter_from_function_xpath(
   'Negate',

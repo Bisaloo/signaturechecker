@@ -1,3 +1,5 @@
+#' Check signature of [qr.Q()]
+#'
 #' @export
 qr_Q_signature_linter <- lintr::make_linter_from_function_xpath(
   'qr.Q',

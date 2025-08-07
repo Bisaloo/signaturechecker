@@ -1,3 +1,5 @@
+#' Check signature of [levels()]
+#'
 #' @export
 levels_signature_linter <- lintr::make_linter_from_function_xpath(
   'levels',

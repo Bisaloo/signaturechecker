@@ -1,3 +1,5 @@
+#' Check signature of [packageNotFoundError()]
+#'
 #' @export
 packageNotFoundError_signature_linter <- lintr::make_linter_from_function_xpath(
   'packageNotFoundError',

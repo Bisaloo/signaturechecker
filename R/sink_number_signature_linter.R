@@ -1,3 +1,5 @@
+#' Check signature of [sink.number()]
+#'
 #' @export
 sink_number_signature_linter <- lintr::make_linter_from_function_xpath(
   'sink.number',

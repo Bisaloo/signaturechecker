@@ -1,3 +1,5 @@
+#' Check signature of [is.expression()]
+#'
 #' @export
 is_expression_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.expression',

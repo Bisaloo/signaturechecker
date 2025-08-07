@@ -1,3 +1,5 @@
+#' Check signature of [dimnames()]
+#'
 #' @export
 dimnames_signature_linter <- lintr::make_linter_from_function_xpath(
   'dimnames',

@@ -1,3 +1,5 @@
+#' Check signature of [sort.int()]
+#'
 #' @export
 sort_int_signature_linter <- lintr::make_linter_from_function_xpath(
   'sort.int',

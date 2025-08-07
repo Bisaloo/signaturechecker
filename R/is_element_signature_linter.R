@@ -1,3 +1,5 @@
+#' Check signature of [is.element()]
+#'
 #' @export
 is_element_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.element',

@@ -1,3 +1,5 @@
+#' Check signature of [is.loaded()]
+#'
 #' @export
 is_loaded_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.loaded',

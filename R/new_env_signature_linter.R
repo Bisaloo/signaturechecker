@@ -1,3 +1,5 @@
+#' Check signature of [new.env()]
+#'
 #' @export
 new_env_signature_linter <- lintr::make_linter_from_function_xpath(
   'new.env',

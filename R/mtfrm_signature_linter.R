@@ -1,3 +1,5 @@
+#' Check signature of [mtfrm()]
+#'
 #' @export
 mtfrm_signature_linter <- lintr::make_linter_from_function_xpath(
   'mtfrm',

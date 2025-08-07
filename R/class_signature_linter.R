@@ -1,3 +1,5 @@
+#' Check signature of [class()]
+#'
 #' @export
 class_signature_linter <- lintr::make_linter_from_function_xpath(
   'class',

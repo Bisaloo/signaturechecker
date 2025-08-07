@@ -1,3 +1,5 @@
+#' Check signature of [storage.mode()]
+#'
 #' @export
 storage_mode_signature_linter <- lintr::make_linter_from_function_xpath(
   'storage.mode',

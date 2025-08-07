@@ -1,3 +1,5 @@
+#' Check signature of [rev.default()]
+#'
 #' @export
 rev_default_signature_linter <- lintr::make_linter_from_function_xpath(
   'rev.default',

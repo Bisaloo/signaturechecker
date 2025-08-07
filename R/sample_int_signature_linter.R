@@ -1,3 +1,5 @@
+#' Check signature of [sample.int()]
+#'
 #' @export
 sample_int_signature_linter <- lintr::make_linter_from_function_xpath(
   'sample.int',

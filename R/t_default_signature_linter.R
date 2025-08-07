@@ -1,3 +1,5 @@
+#' Check signature of [t.default()]
+#'
 #' @export
 t_default_signature_linter <- lintr::make_linter_from_function_xpath(
   't.default',

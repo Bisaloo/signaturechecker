@@ -1,3 +1,5 @@
+#' Check signature of [is.data.frame()]
+#'
 #' @export
 is_data_frame_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.data.frame',

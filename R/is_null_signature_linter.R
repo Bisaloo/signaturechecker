@@ -1,3 +1,5 @@
+#' Check signature of [is.null()]
+#'
 #' @export
 is_null_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.null',

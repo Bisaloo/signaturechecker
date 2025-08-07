@@ -1,3 +1,5 @@
+#' Check signature of [Sys.getenv()]
+#'
 #' @export
 Sys_getenv_signature_linter <- lintr::make_linter_from_function_xpath(
   'Sys.getenv',

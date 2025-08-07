@@ -1,3 +1,5 @@
+#' Check signature of [is.na()]
+#'
 #' @export
 is_na_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.na',

@@ -1,3 +1,5 @@
+#' Check signature of [xtfrm.default()]
+#'
 #' @export
 xtfrm_default_signature_linter <- lintr::make_linter_from_function_xpath(
   'xtfrm.default',

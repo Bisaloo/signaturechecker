@@ -1,3 +1,5 @@
+#' Check signature of [is.unsorted()]
+#'
 #' @export
 is_unsorted_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.unsorted',

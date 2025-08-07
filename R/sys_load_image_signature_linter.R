@@ -1,3 +1,5 @@
+#' Check signature of [sys.load.image()]
+#'
 #' @export
 sys_load_image_signature_linter <- lintr::make_linter_from_function_xpath(
   'sys.load.image',

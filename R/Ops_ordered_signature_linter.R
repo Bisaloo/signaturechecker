@@ -1,3 +1,5 @@
+#' Check signature of [Ops.ordered()]
+#'
 #' @export
 Ops_ordered_signature_linter <- lintr::make_linter_from_function_xpath(
   'Ops.ordered',

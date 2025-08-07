@@ -1,3 +1,5 @@
+#' Check signature of [packageEvent()]
+#'
 #' @export
 packageEvent_signature_linter <- lintr::make_linter_from_function_xpath(
   'packageEvent',

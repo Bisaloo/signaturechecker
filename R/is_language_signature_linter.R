@@ -1,3 +1,5 @@
+#' Check signature of [is.language()]
+#'
 #' @export
 is_language_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.language',

@@ -1,3 +1,5 @@
+#' Check signature of [rank()]
+#'
 #' @export
 rank_signature_linter <- lintr::make_linter_from_function_xpath(
   'rank',

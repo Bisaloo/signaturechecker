@@ -1,3 +1,5 @@
+#' Check signature of [simpleMessage()]
+#'
 #' @export
 simpleMessage_signature_linter <- lintr::make_linter_from_function_xpath(
   'simpleMessage',

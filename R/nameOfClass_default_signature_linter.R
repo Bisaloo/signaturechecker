@@ -1,3 +1,5 @@
+#' Check signature of [nameOfClass.default()]
+#'
 #' @export
 nameOfClass_default_signature_linter <- lintr::make_linter_from_function_xpath(
   'nameOfClass.default',

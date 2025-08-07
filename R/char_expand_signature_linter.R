@@ -1,3 +1,5 @@
+#' Check signature of [char.expand()]
+#'
 #' @export
 char_expand_signature_linter <- lintr::make_linter_from_function_xpath(
   'char.expand',

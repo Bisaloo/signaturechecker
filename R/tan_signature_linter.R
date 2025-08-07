@@ -1,3 +1,5 @@
+#' Check signature of [tan()]
+#'
 #' @export
 tan_signature_linter <- lintr::make_linter_from_function_xpath(
   'tan',

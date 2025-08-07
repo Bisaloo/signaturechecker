@@ -1,3 +1,5 @@
+#' Check signature of [pipe()]
+#'
 #' @export
 pipe_signature_linter <- lintr::make_linter_from_function_xpath(
   'pipe',

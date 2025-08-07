@@ -1,3 +1,5 @@
+#' Check signature of [xtfrm.numeric_version()]
+#'
 #' @export
 xtfrm_numeric_version_signature_linter <- lintr::make_linter_from_function_xpath(
   'xtfrm.numeric_version',

@@ -1,3 +1,5 @@
+#' Check signature of [levels.default()]
+#'
 #' @export
 levels_default_signature_linter <- lintr::make_linter_from_function_xpath(
   'levels.default',

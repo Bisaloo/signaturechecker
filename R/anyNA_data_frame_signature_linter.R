@@ -1,3 +1,5 @@
+#' Check signature of [anyNA.data.frame()]
+#'
 #' @export
 anyNA_data_frame_signature_linter <- lintr::make_linter_from_function_xpath(
   'anyNA.data.frame',

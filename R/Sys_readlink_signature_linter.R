@@ -1,3 +1,5 @@
+#' Check signature of [Sys.readlink()]
+#'
 #' @export
 Sys_readlink_signature_linter <- lintr::make_linter_from_function_xpath(
   'Sys.readlink',

@@ -1,3 +1,5 @@
+#' Check signature of [xtfrm.difftime()]
+#'
 #' @export
 xtfrm_difftime_signature_linter <- lintr::make_linter_from_function_xpath(
   'xtfrm.difftime',

@@ -1,3 +1,5 @@
+#' Check signature of [file.link()]
+#'
 #' @export
 file_link_signature_linter <- lintr::make_linter_from_function_xpath(
   'file.link',

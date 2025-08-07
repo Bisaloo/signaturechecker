@@ -1,3 +1,5 @@
+#' Check signature of [xtfrm.data.frame()]
+#'
 #' @export
 xtfrm_data_frame_signature_linter <- lintr::make_linter_from_function_xpath(
   'xtfrm.data.frame',

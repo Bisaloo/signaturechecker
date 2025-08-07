@@ -1,3 +1,5 @@
+#' Check signature of [pos.to.env()]
+#'
 #' @export
 pos_to_env_signature_linter <- lintr::make_linter_from_function_xpath(
   'pos.to.env',

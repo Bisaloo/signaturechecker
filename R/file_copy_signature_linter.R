@@ -1,3 +1,5 @@
+#' Check signature of [file.copy()]
+#'
 #' @export
 file_copy_signature_linter <- lintr::make_linter_from_function_xpath(
   'file.copy',

@@ -1,3 +1,5 @@
+#' Check signature of [file.access()]
+#'
 #' @export
 file_access_signature_linter <- lintr::make_linter_from_function_xpath(
   'file.access',

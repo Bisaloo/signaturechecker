@@ -1,3 +1,5 @@
+#' Check signature of [is.infinite.POSIXlt()]
+#'
 #' @export
 is_infinite_POSIXlt_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.infinite.POSIXlt',

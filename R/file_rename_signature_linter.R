@@ -1,3 +1,5 @@
+#' Check signature of [file.rename()]
+#'
 #' @export
 file_rename_signature_linter <- lintr::make_linter_from_function_xpath(
   'file.rename',

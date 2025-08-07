@@ -1,3 +1,5 @@
+#' Check signature of [make.names()]
+#'
 #' @export
 make_names_signature_linter <- lintr::make_linter_from_function_xpath(
   'make.names',

@@ -1,3 +1,5 @@
+#' Check signature of [path.package()]
+#'
 #' @export
 path_package_signature_linter <- lintr::make_linter_from_function_xpath(
   'path.package',

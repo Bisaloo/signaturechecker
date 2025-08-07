@@ -1,3 +1,5 @@
+#' Check signature of [names.POSIXlt()]
+#'
 #' @export
 names_POSIXlt_signature_linter <- lintr::make_linter_from_function_xpath(
   'names.POSIXlt',

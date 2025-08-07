@@ -1,3 +1,5 @@
+#' Check signature of [is.numeric()]
+#'
 #' @export
 is_numeric_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.numeric',

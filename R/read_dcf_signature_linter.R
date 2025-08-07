@@ -1,3 +1,5 @@
+#' Check signature of [read.dcf()]
+#'
 #' @export
 read_dcf_signature_linter <- lintr::make_linter_from_function_xpath(
   'read.dcf',

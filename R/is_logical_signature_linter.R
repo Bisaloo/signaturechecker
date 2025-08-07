@@ -1,3 +1,5 @@
+#' Check signature of [is.logical()]
+#'
 #' @export
 is_logical_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.logical',

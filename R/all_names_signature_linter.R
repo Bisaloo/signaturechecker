@@ -1,3 +1,5 @@
+#' Check signature of [all.names()]
+#'
 #' @export
 all_names_signature_linter <- lintr::make_linter_from_function_xpath(
   'all.names',

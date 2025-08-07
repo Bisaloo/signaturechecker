@@ -1,3 +1,5 @@
+#' Check signature of [as.ordered()]
+#'
 #' @export
 as_ordered_signature_linter <- lintr::make_linter_from_function_xpath(
   'as.ordered',

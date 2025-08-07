@@ -1,3 +1,5 @@
+#' Check signature of [is.atomic()]
+#'
 #' @export
 is_atomic_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.atomic',

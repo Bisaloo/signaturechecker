@@ -1,3 +1,5 @@
+#' Check signature of [which.min()]
+#'
 #' @export
 which_min_signature_linter <- lintr::make_linter_from_function_xpath(
   'which.min',

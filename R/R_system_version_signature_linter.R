@@ -1,3 +1,5 @@
+#' Check signature of [R_system_version()]
+#'
 #' @export
 R_system_version_signature_linter <- lintr::make_linter_from_function_xpath(
   'R_system_version',

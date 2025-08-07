@@ -1,3 +1,5 @@
+#' Check signature of [package_version()]
+#'
 #' @export
 package_version_signature_linter <- lintr::make_linter_from_function_xpath(
   'package_version',

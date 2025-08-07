@@ -1,3 +1,5 @@
+#' Check signature of [format.info()]
+#'
 #' @export
 format_info_signature_linter <- lintr::make_linter_from_function_xpath(
   'format.info',

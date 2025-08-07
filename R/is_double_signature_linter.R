@@ -1,3 +1,5 @@
+#' Check signature of [is.double()]
+#'
 #' @export
 is_double_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.double',

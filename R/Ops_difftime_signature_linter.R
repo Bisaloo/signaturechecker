@@ -1,3 +1,5 @@
+#' Check signature of [Ops.difftime()]
+#'
 #' @export
 Ops_difftime_signature_linter <- lintr::make_linter_from_function_xpath(
   'Ops.difftime',

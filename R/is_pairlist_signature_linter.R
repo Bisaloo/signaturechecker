@@ -1,3 +1,5 @@
+#' Check signature of [is.pairlist()]
+#'
 #' @export
 is_pairlist_signature_linter <- lintr::make_linter_from_function_xpath(
   'is.pairlist',

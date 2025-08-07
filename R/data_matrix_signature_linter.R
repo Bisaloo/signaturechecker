@@ -1,3 +1,5 @@
+#' Check signature of [data.matrix()]
+#'
 #' @export
 data_matrix_signature_linter <- lintr::make_linter_from_function_xpath(
   'data.matrix',

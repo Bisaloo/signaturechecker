@@ -1,3 +1,5 @@
+#' Check signature of [tracingState()]
+#'
 #' @export
 tracingState_signature_linter <- lintr::make_linter_from_function_xpath(
   'tracingState',

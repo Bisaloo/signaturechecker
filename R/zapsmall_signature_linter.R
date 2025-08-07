@@ -1,3 +1,5 @@
+#' Check signature of [zapsmall()]
+#'
 #' @export
 zapsmall_signature_linter <- lintr::make_linter_from_function_xpath(
   'zapsmall',

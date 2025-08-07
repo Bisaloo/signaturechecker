@@ -1,3 +1,5 @@
+#' Check signature of [sQuote()]
+#'
 #' @export
 sQuote_signature_linter <- lintr::make_linter_from_function_xpath(
   'sQuote',
