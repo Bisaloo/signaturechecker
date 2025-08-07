@@ -3,8 +3,11 @@ dir_create_signature_linter <- lintr::make_linter_from_function_xpath(
   'dir.create',
   glue::glue(
     'parent::expr[
-      SYMBOL_SUB[not({lintr:::xp_text_in_table(c("path", "showWarnings", "recursive", "mode"))})]
-      or count(SYMBOL_SUB) > 4
+      expr[1][not(OP-DOLLAR)]
+      and (
+        SYMBOL_SUB[not({lintr:::xp_text_in_table(c("path", "showWarnings", "recursive", "mode"))})]
+        or count(SYMBOL_SUB) > 4
+      )
     ]'
   ),
   lint_message = '[signature] invalid signature for dir.create'
