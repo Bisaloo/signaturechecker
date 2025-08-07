@@ -63,7 +63,16 @@
 <div class="section level2">
 <h2 id="motivation">Motivation<a class="anchor" aria-label="anchor" href="#motivation"></a>
 </h2>
-<p>This package provides a way to check, without any modification to the source package or its own check infrastructure, for: * Partially matched arguments * Invalid arguments: * For functions that don’t use ellipses, invalid arguments will generate an error upon execution. But it can still go undetected while developing R package if code coverage is low and this section of the code is untested. * For functions that use ellipses, invalid arguments can be ignored silently if the function doesn’t use <code>chkDots(...)</code> or something equivalent, even in the case of complete code coverage.</p>
+<p>This package provides a way to check, without any modification to the source package or its own check infrastructure, for:</p>
+<ul>
+<li>Partially matched arguments</li>
+<li>Invalid arguments:
+<ul>
+<li>For functions that don’t use ellipses, invalid arguments will generate an error upon execution. But it can still go undetected while developing R package if code coverage is low and this section of the code is untested.</li>
+<li>For functions that use ellipses, invalid arguments can be ignored silently if the function doesn’t use <code>chkDots(...)</code> or something equivalent, even in the case of complete code coverage.</li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
