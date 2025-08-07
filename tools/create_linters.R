@@ -30,7 +30,7 @@ write.csv(
     linter = glue::glue("{gsub('.', '_', base_fcts[has_linter], fixed = TRUE)}_signature_linter"),
     tags = "signature"
   ),
-  system.file("lintr", "linters.csv", package = "signaturechecker"),
+  here::here("inst", "lintr", "linters.csv"),
   row.names = FALSE
 )
 
