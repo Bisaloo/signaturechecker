@@ -23,6 +23,7 @@ The goal of signaturechecker is to use static analysis (via the [lintr R package
 ## Motivation
 
 This package provides a way to check, without any modification to the source package or its own check infrastructure, for:
+
 * Partially matched arguments
 * Invalid arguments:
   * For functions that don't use ellipses, invalid arguments will generate an error upon execution. But it can still go undetected while developing R package if code coverage is low and this section of the code is untested.

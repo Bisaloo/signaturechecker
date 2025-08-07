@@ -14,14 +14,17 @@ given codebase are used with the correct signature.
 ## Motivation
 
 This package provides a way to check, without any modification to the
-source package or its own check infrastructure, for: \* Partially
-matched arguments \* Invalid arguments: \* For functions that don’t use
-ellipses, invalid arguments will generate an error upon execution. But
-it can still go undetected while developing R package if code coverage
-is low and this section of the code is untested. \* For functions that
-use ellipses, invalid arguments can be ignored silently if the function
-doesn’t use `chkDots(...)` or something equivalent, even in the case of
-complete code coverage.
+source package or its own check infrastructure, for:
+
+- Partially matched arguments
+- Invalid arguments:
+  - For functions that don’t use ellipses, invalid arguments will
+    generate an error upon execution. But it can still go undetected
+    while developing R package if code coverage is low and this section
+    of the code is untested.
+  - For functions that use ellipses, invalid arguments can be ignored
+    silently if the function doesn’t use `chkDots(...)` or something
+    equivalent, even in the case of complete code coverage.
 
 ## Installation
 
