@@ -63,8 +63,7 @@ get_recursive_formals <- function(fct) {
   def <- body(fct)
 
   if (is.null(def) || any(grepl("UseMethod", def))) {
-    # We have encountered a Primitive. All hope is lost. Flush formals and abort.
-    formals_env[["formals"]] <- NULL
+    # We have encountered a Primitive. All hope is lost. Abort.
     return(FALSE)
   }
 
@@ -83,7 +82,6 @@ get_recursive_formals <- function(fct) {
     "SYMBOL_FUNCTION_CALL[text() = '...length' or text() = '...names()']"
   )
   if (length(hidden_ellipsis_fcts) > 0) {
-    formals_env[["formals"]] <- NULL
     return(FALSE)
   }
 
@@ -103,7 +101,6 @@ get_recursive_formals <- function(fct) {
   )
 
   if (any(!is.na(internal_calls))) {
-    formals_env[["formals"]] <- NULL
     return(FALSE)
   }
 
@@ -113,7 +110,6 @@ get_recursive_formals <- function(fct) {
 
   if ("FUN" %in% next_fcts) {
     # Conventionally, FUN is a user-defined function
-    formals_env[["formals"]] <- NULL
     return(FALSE)
   }
 
