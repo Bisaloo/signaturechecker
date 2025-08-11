@@ -37,3 +37,15 @@ You can install the development version of signaturechecker from [GitHub](https:
 # install.packages("pak")
 pak::pak("Bisaloo/signaturechecker")
 ```
+
+## Usage
+
+This package is still experimental and it is not recommended to put it in your `.lintr` configuration file at this stage.
+
+You can however periodically check the signature of the base functions in your codebase by running:
+
+```r
+lintr::lint_package(
+  linters = lintr::all_linters(packages = "signaturechecker")
+)
+```
